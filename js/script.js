@@ -1,33 +1,5 @@
 "use strict";
 
-/** Gerencia o tema visual e preserva a escolha da pessoa visitante. */
-const themeManager = (() => {
-  const storageKey = "felipe-invite-theme";
-  const body = document.body;
-  const button = document.querySelector(".theme-toggle");
-  const icon = button.querySelector(".theme-toggle__icon");
-  const label = button.querySelector(".theme-toggle__text");
-
-  const applyTheme = (theme) => {
-    const isDark = theme === "dark";
-    body.classList.toggle("dark", isDark);
-    button.setAttribute("aria-pressed", String(isDark));
-    button.setAttribute("aria-label", isDark ? "Ativar modo claro" : "Ativar modo escuro");
-    icon.textContent = isDark ? "🌙" : "☀️";
-    label.textContent = isDark ? "Modo claro" : "Modo escuro";
-  };
-
-  const savedTheme = localStorage.getItem(storageKey);
-  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  applyTheme(savedTheme || (systemPrefersDark ? "dark" : "light"));
-
-  button.addEventListener("click", () => {
-    const nextTheme = body.classList.contains("dark") ? "light" : "dark";
-    localStorage.setItem(storageKey, nextTheme);
-    applyTheme(nextTheme);
-  });
-})();
-
 /** Ativa a mensagem final somente quando ela entra no campo de visão. */
 const setupScrollReveal = () => {
   const closing = document.querySelector(".closing");
