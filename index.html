@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Convite digital de aniversário do Felipe." />
+    <meta name="theme-color" content="#7d5bc4" />
+    <title>Aniversário do Felipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Fundo animado de balões -->
+    <div class="balloon-field" aria-hidden="true">
+      <span class="balloon balloon--pink"></span><span class="balloon balloon--blue"></span>
+      <span class="balloon balloon--yellow"></span><span class="balloon balloon--purple"></span>
+      <span class="balloon balloon--coral"></span><span class="balloon balloon--mint"></span>
+      <span class="confetti confetti--one"></span><span class="confetti confetti--two"></span>
+      <span class="confetti confetti--three"></span><span class="confetti confetti--four"></span>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="topbar container">
+      <a class="brand" href="#convite" aria-label="Convite de aniversário do Felipe">F</a>
+      <button class="theme-toggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+        <span class="theme-toggle__icon" aria-hidden="true">☀️</span>
+        <span class="theme-toggle__text">Modo escuro</span>
+      </button>
+    </header>
+
+    <main id="convite">
+      <!-- Hero / Convite principal -->
+      <section class="hero container" aria-labelledby="main-title">
+        <div class="hero__content">
+          <p class="eyebrow reveal">Prepare-se para uma tarde inesquecível!</p>
+          <p class="celebrate reveal">Vamos comemorar</p>
+          <h1 id="main-title" class="hero__title reveal">o aniversário<br />do <span>Felipe</span></h1>
+          <p class="hero__subtitle reveal">com muita alegria, brincadeiras e diversão!</p>
+
+          <div class="event-card reveal" aria-label="Informações do evento">
+            <div class="event-card__item"><span class="event-card__emoji" aria-hidden="true">🎂</span><span><strong>Dia 17 de agosto</strong><small>domingo, às 15h</small></span></div>
+            <div class="event-card__line" aria-hidden="true"></div>
+            <div class="event-card__item event-card__venue">
+              <span class="event-card__emoji" aria-hidden="true">📍</span>
+              <span>
+                <strong>Espaço Alegria</strong>
+                <small>Rua das Flores, 123</small>
+                <a class="directions-button" href="https://maps.app.goo.gl/chj5DcJ38yx9NWGf9" data-external-url="https://maps.app.goo.gl/chj5DcJ38yx9NWGf9" target="_blank" rel="noopener" aria-label="Como chegar ao Espaço Alegria pelo Google Maps">
+                  <span aria-hidden="true">📍</span> Como Chegar
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <a class="rsvp-button reveal" href="https://wa.me/5582988581103?text=Ol%C3%A1%21%20Gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20anivers%C3%A1rio%20do%20Felipe.%20%F0%9F%8E%89%F0%9F%8E%82" data-external-url="https://wa.me/5582988581103?text=Ol%C3%A1%21%20Gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20anivers%C3%A1rio%20do%20Felipe.%20%F0%9F%8E%89%F0%9F%8E%82" target="_blank" rel="noopener">
+            Confirmar presença <span aria-hidden="true">✦</span>
+          </a>
+        </div>
+
+        <div class="hero__art reveal" aria-label="Ilustração festiva de aniversário">
+          <!-- Substitua este bloco por uma foto/arte extraída do PDF, se desejado. -->
+          <div class="rainbow" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="cloud cloud--left" aria-hidden="true"></div><div class="cloud cloud--right" aria-hidden="true"></div>
+          <div class="photo-placeholder">
+            <span class="photo-placeholder__sparkle" aria-hidden="true">✦</span>
+            <img class="photo-placeholder__image is-visible" src="img/Felipe.png" alt="Felipe sorrindo em sua foto de aniversário" />
+            <img class="photo-placeholder__image" src="img/Felipe2.png" alt="Felipe em uma foto de aniversário" />
+          </div>
+          <div class="cake" aria-hidden="true"><div class="cake__candle"></div><div class="cake__top"></div><div class="cake__middle"></div><div class="cake__base"><i></i><i></i><i></i></div></div>
+          <span class="star star--one" aria-hidden="true">★</span><span class="star star--two" aria-hidden="true">✦</span>
+        </div>
+      </section>
+
+      <!-- Mensagem final -->
+      <section class="closing container reveal" aria-labelledby="closing-title">
+        <span class="closing__star" aria-hidden="true">✦</span>
+        <h2 id="closing-title">Sua presença vai deixar esse dia ainda mais especial!</h2>
+        <p>Esperamos você para celebrar esse momento cheio de carinho.</p>
+      </section>
+    </main>
+
+    <footer class="footer container"><p>Feito com carinho para o Felipe <span aria-hidden="true">♥</span></p></footer>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
