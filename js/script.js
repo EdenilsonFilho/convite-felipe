@@ -68,7 +68,7 @@ const setupPhotoRotation = () => {
     photos[activePhoto].classList.remove("is-visible");
     activePhoto = (activePhoto + 1) % photos.length;
     photos[activePhoto].classList.add("is-visible");
-  }, 20000);
+  }, 5000);
 };
 
 setupPhotoRotation();

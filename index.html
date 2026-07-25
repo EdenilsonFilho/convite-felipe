@@ -34,19 +34,20 @@
       <!-- Hero / Convite principal -->
       <section class="hero container" aria-labelledby="main-title">
         <div class="hero__content">
-          <p class="eyebrow reveal">Prepare-se para uma tarde inesquecível!</p>
-          <p class="celebrate reveal">Vamos comemorar</p>
-          <h1 id="main-title" class="hero__title reveal">o aniversário<br />do <span>Felipe</span></h1>
-          <p class="hero__subtitle reveal">com muita alegria, brincadeiras e diversão!</p>
+          <p class="eyebrow reveal"><span aria-hidden="true">★</span> apresenta <span aria-hidden="true">★</span></p>
+          <p class="theme-sign reveal" aria-label="3 Palavrinhas"><span class="theme-sign__number">3</span><span class="theme-sign__word">PALAVRINHAS</span></p>
+          <p class="celebrate reveal">Uma festa cheia de alegria!</p>
+          <h1 id="main-title" class="hero__title reveal"><span class="title-name" aria-label="Felipe"><b aria-hidden="true">F</b><b aria-hidden="true">E</b><b aria-hidden="true">L</b><b aria-hidden="true">I</b><b aria-hidden="true">P</b><b aria-hidden="true">E</b></span><span class="title-phrase"> faz</span><br /><span class="title-one">1</span><span class="title-phrase"> aninho!</span></h1>
+          <p class="hero__subtitle reveal">Um dia especial merece pessoas especiais!</p>
 
           <div class="event-card reveal" aria-label="Informações do evento">
-            <div class="event-card__item"><span class="event-card__emoji" aria-hidden="true">🎂</span><span><strong>Dia 17 de agosto</strong><small>domingo, às 15h</small></span></div>
+            <div class="event-card__item event-card__date"><span class="event-card__emoji" aria-hidden="true">📅</span><span><strong>29 de agosto<br />de 2026</strong><small>🕒 15h00</small></span></div>
             <div class="event-card__line" aria-hidden="true"></div>
             <div class="event-card__item event-card__venue">
               <span class="event-card__emoji" aria-hidden="true">📍</span>
               <span>
-                <strong>Espaço Alegria</strong>
-                <small>Rua das Flores, 123</small>
+                <strong>Vitória Festas e Eventos</strong>
+                <small>Rua Professor Humberto Vilela<br />Clima Bom I - Maceió - AL<br />CEP: 57071-820</small>
                 <a class="directions-button" href="https://maps.app.goo.gl/chj5DcJ38yx9NWGf9" data-external-url="https://maps.app.goo.gl/chj5DcJ38yx9NWGf9" target="_blank" rel="noopener" aria-label="Como chegar ao Espaço Alegria pelo Google Maps">
                   <span aria-hidden="true">📍</span> Como Chegar
                 </a>
@@ -67,21 +68,45 @@
             <span class="photo-placeholder__sparkle" aria-hidden="true">✦</span>
             <img class="photo-placeholder__image is-visible" src="img/Felipe.png" alt="Felipe sorrindo em sua foto de aniversário" />
             <img class="photo-placeholder__image" src="img/Felipe2.png" alt="Felipe em uma foto de aniversário" />
+            <img class="photo-placeholder__image" src="img/Felipe3.png" alt="Felipe em uma foto de aniversário" />
+            <img class="photo-placeholder__image" src="img/Felipe4.png" alt="Felipe em uma foto de aniversário" />
           </div>
           <div class="cake" aria-hidden="true"><div class="cake__candle"></div><div class="cake__top"></div><div class="cake__middle"></div><div class="cake__base"><i></i><i></i><i></i></div></div>
           <span class="star star--one" aria-hidden="true">★</span><span class="star star--two" aria-hidden="true">✦</span>
         </div>
       </section>
 
+      <!-- Sugestões de presentes -->
+      <section class="gifts container reveal" aria-labelledby="gifts-title">
+        <div class="gifts__heading">
+          <span aria-hidden="true">🎁</span>
+          <div><p>Se desejar presentear</p><h2 id="gifts-title">O Felipe vai amar!</h2></div>
+        </div>
+        <ul class="gifts__list">
+          <li>
+            <svg class="gift-icon gift-icon--clothes" viewBox="0 0 64 64" aria-hidden="true"><path class="gift-icon__shirt" d="m18 13 10 5 4 6 4-6 10-5 10 10-7 11-8-5v22H23V29l-8 5-7-11z" /><path class="gift-icon__collar" d="m28 18 4 6 4-6M32 24v8" /></svg>
+            <span><strong>Roupas:</strong><small>2 a 3 anos</small></span>
+          </li>
+          <li>
+            <svg class="gift-icon gift-icon--shoes" viewBox="0 0 64 64" aria-hidden="true"><path d="M9 42c11-3 17-12 19-23l8 14c5 7 13 9 19 10 4 1 7 4 7 9H11c-3 0-4-3-2-10z" /><path d="M29 38h8m-3 5h9m-24 9v-5" /></svg>
+            <span><strong>Calçados:</strong><small>23/24</small></span>
+          </li>
+          <li>
+            <svg class="gift-icon gift-icon--car" viewBox="0 0 64 64" aria-hidden="true"><g class="gift-icon__car" transform="translate(0 8) scale(.8)"><path d="m7 39 5-11h20l7 11v11H7z" /><path d="M15 28h14l5 11H10M7 43h32" /><circle cx="15" cy="50" r="5" /><circle cx="32" cy="50" r="5" /></g><path class="gift-icon__puzzle" d="M46 18h8v6a4 4 0 1 1 5 5v8h-6a4 4 0 1 0-5 5v6h-8v-6a4 4 0 1 1-5-5v-8h6a4 4 0 1 0 5-5z" /></svg>
+            <span><strong>Brinquedos<br />educativos</strong></span>
+          </li>
+        </ul>
+      </section>
+
       <!-- Mensagem final -->
       <section class="closing container reveal" aria-labelledby="closing-title">
         <span class="closing__star" aria-hidden="true">✦</span>
-        <h2 id="closing-title">Sua presença vai deixar esse dia ainda mais especial!</h2>
-        <p>Esperamos você para celebrar esse momento cheio de carinho.</p>
+        <h2 id="closing-title">Venha comemorar conosco o primeiro aninho do nosso pequeno Felipe.</h2>
+        <p>Sua presença tornará esse momento ainda mais inesquecível!</p>
       </section>
     </main>
 
-    <footer class="footer container"><p>Feito com carinho para o Felipe <span aria-hidden="true">♥</span></p></footer>
+    <footer class="footer container"><p>Com carinho,<br /><strong>Mamãe Flávia</strong> e <strong>Papai Ederllan</strong> <span aria-hidden="true">♥</span></p></footer>
     <script src="js/script.js" defer></script>
   </body>
 </html>
