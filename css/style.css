@@ -91,3 +91,6 @@ body.dark { background:linear-gradient(#0c4898 0 62%,#082863 62% 100%); }
 .event-card__item { justify-content:center; text-align:center; }.event-card__venue { align-items:center; }.event-card__venue > span:last-child { text-align:center; }.directions-button { margin-inline:auto; }
 @media (max-width:780px){.event-card strong{font-size:1.05rem}.event-card small{font-size:.9rem}.event-card__emoji{font-size:1.7rem}.directions-button{font-size:.82rem;padding:.52rem .8rem}}
 @media (max-width:420px){.event-card strong{font-size:1rem}.event-card small{font-size:.86rem}.event-card__emoji{font-size:1.55rem}}
+
+/* Respiro extra entre os blocos no celular */
+@media (max-width:600px){.rsvp-button{margin-bottom:1.25rem}.gifts{margin-top:1.75rem}.hero__art.reveal{margin-top:0;margin-bottom:1rem}}
